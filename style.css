@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #273c75;
+}
+
+.container {
+    background: #fff;
+    width: 35%;
+    padding: 17px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    margin: 10% auto;
+    user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.add_box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    border: 1px solid #f1f2f6;
+    background-color: #f1f2f6;
+}
+.add_box input[type="text"] {
+    width: 100%;
+    border: none;
+    padding: 0px 15px;
+    background: none;
+    color: #333;
+    font-weight: bold;
+    outline: none;
+}
+.add_btn {
+    padding: 7px 15px;
+    background: #9c88ff;
+    border: 3px solid #9c88ff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+    outline: none;
+}
+.add_btn:hover {
+    background: #8770f8;
+    border: 3px solid #8770f8;
+}
+
+.list {
+    margin-top: 3%;
+}
+.list div {
+    background-color: #f1f2f6;
+    margin-top: 3%;
+    padding: 7px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.list input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    color: #333;
+    font-weight: bold;
+}
+.list a {
+    padding: 0px 5px;
+    color: #333;
+    transition: all 0.5s;
+}
+.remove:hover {color: #e84118;}
+.edit:hover {color: #ff9f43;}
+.save:hover {color: #1abc9c;}
+
+/* Mobile View */
+@media only screen and (max-width: 500px) 
+{
+    .container { width: 90%; }
+}
